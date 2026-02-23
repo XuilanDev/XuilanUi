@@ -64,3 +64,149 @@ Window:AddKeySystem({
     }
 })
 ```
+## Add Section
+```luau
+local Section = Window:AddSection({
+    Name = "Section Name",
+    Font = "SourceSansBold",
+    Color = "255,255,255"
+})
+```
+## Add Window Separator
+### (In sections)
+```luau
+Window:AddSeparator()
+```
+## Add Section Separator
+```luau
+Section:AddSeparator()
+```
+## Add Head Text
+```luau
+Section:AddHeadText({
+    Name = "Head Text",
+    Font = "SourceSansBold",
+    Color = "255,255,255",
+    TextSize = 16,
+    Lines = true,
+    LineColor = "200,200,200"
+})
+```
+## Add Toggle
+```luau
+Section:AddToggle({
+    Name = "Toggle Name",
+    Font = "SourceSans",
+    Color = "255,255,255",
+    TextSize = 14,
+    Default = false,
+    Bind = "F",
+    Callback = function(state)
+        print(state)
+    end
+})
+```
+## Add Button
+```luau
+Section:AddButton({
+    Name = "Button Name",
+    Font = "SourceSans",
+    Color = "255,255,255",
+    TextSize = 14,
+    Bind = "K",
+    Callback = function()
+        print("Pressed")
+    end
+})
+```
+## Add Slider
+```luau
+Section:AddSlider({
+    Name = "Slider Name",
+    Font = "SourceSans",
+    Color = "255,255,255",
+    TextSize = 14,
+    Min = 0,
+    Max = 100,
+    Default = 50,
+    Increment = 1,
+    Callback = function(value)
+        print(value)
+    end
+})
+```
+## Add Dropdown
+```luau
+Section:AddDropdown({
+    Name = "Dropdown Name",
+    Font = "SourceSans",
+    Color = "255,255,255",
+    TextSize = 14,
+    Options = {"Option 1", "Option 2", "Option 3"},
+    Default = "Option 1",
+    Multi = false,
+    Callback = function(value)
+        print(value)
+    end
+})
+```
+## Add TextBox
+```luau
+Section:AddTextBox({
+    Name = "TextBox Name",
+    Font = "SourceSans",
+    Color = "255,255,255",
+    TextSize = 14,
+    Default = "...",
+    Callback = function(text)
+        print(text)
+    end
+})
+```
+## Add Label
+```luau
+Section:AddLabel({
+    Text = "Label text",
+    Font = "SourceSans",
+    Color = "200,200,200",
+    TextSize = 14,
+    Lines = 2
+})
+```
+## Add Color Picker
+```luau
+Section:AddColorPicker({
+    Name = "Color Picker",
+    Font = "SourceSansBold",
+    Color = "255,255,255",
+    TextSize = 14,
+    Default = "255, 0, 0",
+    Callback = function(rgb)
+        print(rgb)
+    end
+})
+```
+## Add Notification
+```luau
+Section:AddNotification({
+    Title = "Enabled",
+    Description = "Feature activated",
+    TitleColor = "255,255,255",
+    TitleFont = "SourceSansBold",
+    DescrColor = "200,200,200",
+    DescrFont = "SourceSans",
+    When = "On",
+    Duration = 2
+})
+```
+## Add Theme
+```luau
+Window:AddTheme("Custom Theme", {
+    MainColor = "25,25,25",
+    InnerColor = "35,35,35",
+    AccentColor = "0,170,255",
+    TextColor = "255,255,255",
+    MainTransparency = 0,
+    InnerTransparency = 0
+})
+```
