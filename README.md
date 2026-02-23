@@ -22,19 +22,44 @@ local Window = Xuilan:CreateWindow({
 ## Add Key System
 ```luau
 Window:AddKeySystem({
-    Key = "YourKey",
+    Key = "JeffreyEinstein",
     TextColor = "255,255,255",
-    BackgroundImage = "ASSET_ID",
-    BackgroundImageTransparency = 0.8,
+    BackgroundImage = "136007050760089",
+    BackgroundImageTransparency = 0.85,
     YOffset = 0,
+
     Buttons = {
         {
-            Text = "Get Key",
-            CopyContent = "https://link.com",
+            Text = "Get Key 1",
+            CopyContent = "https://link1.com",
             TextColor = "255,255,255",
             BackgroundColor = "60,60,80",
             BackgroundTransparency = 0.1,
-            Icon = "ASSET_ID"
+            Icon = "136007050760089"
+        },
+        {
+            Text = "Get Key 2",
+            CopyContent = "https://link2.com",
+            TextColor = "255,255,255",
+            BackgroundColor = "60,60,80",
+            BackgroundTransparency = 0.1,
+            Icon = "136007050760089"
+        },
+        {
+            Text = "Get Key 3",
+            CopyContent = "https://link3.com",
+            TextColor = "255,255,255",
+            BackgroundColor = "60,60,80",
+            BackgroundTransparency = 0.1,
+            Icon = "136007050760089"
+        },
+        {
+            Text = "Get Key 4",
+            CopyContent = "https://link4.com",
+            TextColor = "255,255,255",
+            BackgroundColor = "60,60,80",
+            BackgroundTransparency = 0.1,
+            Icon = "136007050760089"
         }
     }
 })
