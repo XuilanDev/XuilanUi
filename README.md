@@ -24,7 +24,7 @@ local Window = Xuilan:CreateWindow({
 Window:AddKeySystem({
     Key = "JeffreyEinstein",
     TextColor = "255,255,255",
-    BackgroundImage = "136007050760089",
+    BackgroundImage = "ASSET_ID",
     BackgroundImageTransparency = 0.85,
     YOffset = 0,
 
@@ -35,7 +35,7 @@ Window:AddKeySystem({
             TextColor = "255,255,255",
             BackgroundColor = "60,60,80",
             BackgroundTransparency = 0.1,
-            Icon = "136007050760089"
+            Icon = "ASSET_ID"
         },
         {
             Text = "Get Key 2",
@@ -43,7 +43,7 @@ Window:AddKeySystem({
             TextColor = "255,255,255",
             BackgroundColor = "60,60,80",
             BackgroundTransparency = 0.1,
-            Icon = "136007050760089"
+            Icon = "ASSET_ID"
         },
         {
             Text = "Get Key 3",
@@ -51,7 +51,7 @@ Window:AddKeySystem({
             TextColor = "255,255,255",
             BackgroundColor = "60,60,80",
             BackgroundTransparency = 0.1,
-            Icon = "136007050760089"
+            Icon = "ASSET_ID"
         },
         {
             Text = "Get Key 4",
@@ -59,7 +59,7 @@ Window:AddKeySystem({
             TextColor = "255,255,255",
             BackgroundColor = "60,60,80",
             BackgroundTransparency = 0.1,
-            Icon = "136007050760089"
+            Icon = "ASSET_ID"
         }
     }
 })
@@ -101,8 +101,8 @@ Section:AddToggle({
     TextSize = 14,
     Default = false,
     Bind = "F",
-    Callback = function(state)
-        print(state)
+    Callback = function()
+
     end
 })
 ```
@@ -115,7 +115,6 @@ Section:AddButton({
     TextSize = 14,
     Bind = "K",
     Callback = function()
-        print("Pressed")
     end
 })
 ```
@@ -130,8 +129,7 @@ Section:AddSlider({
     Max = 100,
     Default = 50,
     Increment = 1,
-    Callback = function(value)
-        print(value)
+    Callback = function()
     end
 })
 ```
@@ -145,8 +143,7 @@ Section:AddDropdown({
     Options = {"Option 1", "Option 2", "Option 3"},
     Default = "Option 1",
     Multi = false,
-    Callback = function(value)
-        print(value)
+    Callback = function()
     end
 })
 ```
@@ -158,8 +155,7 @@ Section:AddTextBox({
     Color = "255,255,255",
     TextSize = 14,
     Default = "...",
-    Callback = function(text)
-        print(text)
+    Callback = function()
     end
 })
 ```
@@ -181,8 +177,7 @@ Section:AddColorPicker({
     Color = "255,255,255",
     TextSize = 14,
     Default = "255, 0, 0",
-    Callback = function(rgb)
-        print(rgb)
+    Callback = function()
     end
 })
 ```
@@ -195,7 +190,7 @@ Section:AddNotification({
     TitleFont = "SourceSansBold",
     DescrColor = "200,200,200",
     DescrFont = "SourceSans",
-    When = "On",
+    When = "On", 
     Duration = 2
 })
 ```
