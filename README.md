@@ -1,6 +1,6 @@
 ## Load Library
 ```luau
-local Xuilan = loadstring(game:HttpGet("https://raw.githubusercontent.com/XuilanDev/SimpleUi/refs/heads/main/lib.lua"))()
+local Xuilan = loadstring(game:HttpGet("https://raw.githubusercontent.com/XuilanDev/XuilanUi/refs/heads/main/Lib.lua"))()
 ```
 ## Create Window
 ```luau
