@@ -100,7 +100,8 @@ Section:AddToggle({
     Color = "255,255,255",
     TextSize = 14,
     Default = false,
-    Bind = "F",
+    Bind = false,
+    BindKey = "",
     Callback = function()
 
     end
@@ -113,7 +114,8 @@ Section:AddButton({
     Font = "SourceSans",
     Color = "255,255,255",
     TextSize = 14,
-    Bind = "K",
+    Bind = false,
+    BindKey = "",
     Callback = function()
     end
 })
